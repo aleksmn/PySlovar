@@ -1,6 +1,9 @@
+import os
 from bs4 import BeautifulSoup
 
-file = open('words.xml')
+
+my_dir = os.path.dirname(__file__)
+file = open(my_dir + '/words.xml')
 
 soup = BeautifulSoup(file, 'html.parser')
 
